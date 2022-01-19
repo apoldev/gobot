@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/coolphp/gobot/server"
+	"github.com/apoldev/gobot/server"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	log "github.com/sirupsen/logrus"
 )

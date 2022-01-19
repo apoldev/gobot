@@ -1,8 +1,8 @@
 package server
 
 import (
-	"github.com/coolphp/gobot/store"
-	"github.com/coolphp/gobot/telegram"
+	"github.com/apoldev/gobot/store"
+	"github.com/apoldev/gobot/telegram"
 	"github.com/gin-gonic/gin"
 )
 

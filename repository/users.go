@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/coolphp/gobot/models"
-	"github.com/coolphp/gobot/store"
+	"github.com/apoldev/gobot/models"
+	"github.com/apoldev/gobot/store"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 

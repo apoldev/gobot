@@ -2,7 +2,7 @@ package store
 
 import (
 	"fmt"
-	"github.com/coolphp/gobot/models"
+	"github.com/apoldev/gobot/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"os"

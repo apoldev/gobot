@@ -1,7 +1,7 @@
 package telegram
 
 import (
-	"github.com/coolphp/gobot/store"
+	"github.com/apoldev/gobot/store"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	log "github.com/sirupsen/logrus"
 	"os"

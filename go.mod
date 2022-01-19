@@ -1,4 +1,4 @@
-module github.com/coolphp/gobot
+module github.com/apoldev/gobot
 
 go 1.17
 
