@@ -1,0 +1,41 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        stage: dev
+    ports:
+      - "8890:8081"
+    environment:
+      PORT: '8081'
+      DB_HOST: 'db'
+      DB_PORT: '5432'
+      DB_USER: 'postgres'
+      DB_PASSWORD: 'example'
+      DB_NAME: 'gobot'
+
+      TELEGRAM_BOT: 'TOKEN'
+      TELEGRAM_BOT_DEBUG: 'false'
+
+      # GIN_MODE: 'release'
+
+
+    volumes:
+      - .:/app
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8082:8080
